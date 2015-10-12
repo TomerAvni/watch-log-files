@@ -37,7 +37,7 @@ app.get('/login', function(req, res,next) {
 
 app.get('/sign-out', function(req, res, next) {
 	delete req.session.user;
- 	res.redirect('/login.html');
+ 	res.redirect('/login');
 })
 
 app.post('/sign-in', function(req, res, next) {
