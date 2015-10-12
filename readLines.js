@@ -44,7 +44,7 @@ function get_line(filename, skip, numOfLines, callback) {
     }
 
     stream.on('error', function(err){
-      deferred.fail(err);
+      deferred.reject(err);
     });
 
     stream.on('end', endOfFile);
