@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <title>Veedm's logs</title>
+  <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--
+  agile, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+  
+  
+  
+  Download: http://zypopwebtemplates.com/
+  
+  License: Creative Commons Attribution
+  //-->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../scripts/sockets.js"></script>
+  <script src="../scripts/main.js"></script>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+</head>
+
+<body>
+
+<section id="body" class="width">
+  <aside id="sidebar" class="column-left">
+
+    <header>
+      <h1><a href="#">LOGS~</a></h1>
+
+      <h2>EXPLORE LOGS IN REAL TIME!</h2>
+
+    </header>
+
+    <nav id="mainnav">
+      <ul>
+        <li class="log-file-item selected-item"><a href="mylogfile.log">Production's Log</a></li>
+        <li class="log-file-item"><a href="mylogfile2.log">Server's Log</a></li>
+        <li class="log-file-item sign-out"><a href="sign-out">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+
+  </aside>
+  <section id="content" class="column-right">
+
+    <article>
+      <div id="log-file-header">
+        <h2 id="file-name-header"></h2>
+
+        <div class="scroll-to-view">
+          <input type="checkbox" name="vehicle" id="scrollIntoView" value="Bike" checked/><span>Scroll into view</span>
+        </div>
+        <div class="clear-log">
+          <button id="clearLog">Clear</button>
+        </div>
+      </div>
+      <div id="main-content">
+      </div>
+    </article>
+
+
+    <footer class="clear">
+      <p>&copy; 2015. <a href="//veed.me">Veed.Me</a> by US!</p>
+    </footer>
+
+  </section>
+
+  <div class="clear"></div>
+
+</section>
+
+
+</body>
+</html>
