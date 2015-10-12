@@ -382,6 +382,10 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
     	bottom: 0;
     	padding: 10px;
 	}
+
+	div.clear {
+		min-height: 60px;
+	}
 }
 
 
