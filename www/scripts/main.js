@@ -3,7 +3,7 @@
 	$(document).ready(function() {
 		getBaseFileContent($('.log-file-item.selected-item').find('a').attr('href'));
 		$("#clearLog").on('click', clearContent);
-		$(".log-file-item").on('click', function(e) {
+		$(".log-file-item:not(.sign-out)").on('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 			$('.log-file-item').removeClass('selected-item');
@@ -42,9 +42,4 @@
 
 		}
 	}
-
-	// function nl2br (str, is_xhtml) {   
- //    	var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';    
- //    	return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
-	// }	
 }())
