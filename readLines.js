@@ -1,6 +1,6 @@
 var fs = require('fs');
 var api = {getLines: get_line};
-var Q = require('Q');
+var Q = require('q');
 
 function get_line(filename, skip, numOfLines, callback) {
     var deferred = Q.defer()

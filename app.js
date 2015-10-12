@@ -66,7 +66,7 @@ app.get('/api/log', function(req, res, next) {
 	}
 
 	var url_parts = url.parse(req.url, true);
-	var fileName = __dirname + '/' + convertFilenameToPath(url_parts.query.file);
+	var fileName = '/' + convertFilenameToPath(url_parts.query.file);
     require('./readLines.js').getLines(fileName, null, url_parts.query.top ? url_parts.query.top : 20)
     	.then(function(result) {
     		res.json(result);
@@ -111,9 +111,9 @@ function setUsersTable() {
 function convertFilenameToPath(filename) {
 	var fileObj = configuration.logFiles.filter(function(file) {
 		return filename == file.path;
-	});
+	})[0];
 
-	return fileObj[0].fullpath;
+	return fileObj.relative ? (__dirname + '/' + fileObj.fullpath) : fileObj.fullpath;
 }
 
 function registerTail(fileName, socket) {

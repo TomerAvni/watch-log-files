@@ -16,7 +16,7 @@ function mySocket() {
 	};
 
 	function init(url, onConnection) {
-		socket = io.connect(url/*'http://localhost:4200'*/);
+		socket = io.connect(url);
 
 		socket.on('connect', onConnection);
 		socket.on('broad', function(data) {
@@ -27,19 +27,9 @@ function mySocket() {
 		});
 	}
 
-	
-
-	
-	 // $('form').submit(function(e){
-	 //     e.preventDefault();
-	 //     var message = $('#chat_input').val();
-	 //     socket.emit('messages', message);
-	 // });
-
 	function scrollToBottomQueue() {
 		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 	}
-
 
 	function DelayedFunction(toPerform, lengthToDelay) {
 	    var value = null;

@@ -22,7 +22,7 @@
 		});
 
 		// if exits, cancel!
-		socket.watch('http://localhost:4200', filename);
+		socket.watch(document.location.origin, filename);
 	}
 
 	function clearContent() {
