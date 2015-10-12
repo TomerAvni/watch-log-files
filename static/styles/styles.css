@@ -376,7 +376,12 @@ footer p a:hover { color:#333; border-bottom-color: #333; }
 	
 	section#content, aside#sidebar { position: relative; float: none; width: auto; }
 
-	
+	#log-file-header {
+		margin-left: -35px;
+    	width: 100%;
+    	bottom: 0;
+    	padding: 10px;
+	}
 }
 
 
