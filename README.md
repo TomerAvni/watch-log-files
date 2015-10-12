@@ -15,6 +15,8 @@ All configurations (users, log-files to watch) are defined on the conf.json file
 The file is be re-loaded every time a login is being called (so a simple update of the file will update the servers.. no need to **Restart** if changed.)
 For the simple example:
 	User: 1, Password: 1
+	
+2 sample log files are provided (mylogfile.log && mylogfile2.log).
 
 ## Running
 You need to run both socket.io && ExpressJS servers:
