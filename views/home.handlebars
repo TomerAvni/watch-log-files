@@ -1,0 +1,51 @@
+<section id="body" class="width">
+  <aside id="sidebar" class="column-left">
+
+    <header>
+      <h1><a href="#">LOGS~</a></h1>
+
+      <h2>EXPLORE LOGS IN REAL TIME!</h2>
+    </header>
+
+    <nav id="mainnav">
+      <ul>
+        {{#each logFiles}}
+          {{#if default}}
+          <li class="log-file-item selected-item"><a href="{{path}}">{{name}}</a></li>
+          {{else}}
+          <li class="log-file-item"><a href="{{path}}">{{name}}</a></li>
+          {{/if}}
+        {{/each}}
+        <li class="log-file-item sign-out"><a href="sign-out">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+
+  </aside>
+  <section id="content" class="column-right">
+
+    <article>
+      <div id="log-file-header">
+        <h2 id="file-name-header"></h2>
+
+        <div class="scroll-to-view">
+          <input type="checkbox" name="vehicle" id="scrollIntoView" value="Bike" checked/><span>Scroll into view</span>
+        </div>
+        <div class="clear-log">
+          <button id="clearLog">Clear</button>
+        </div>
+      </div>
+      <div id="main-content">
+      </div>
+    </article>
+
+
+    <footer class="clear">
+      <p>&copy; 2015. <a href="//veed.me">Veed.Me</a> by Tomer Avni</p>
+    </footer>
+
+  </section>
+
+  <div class="clear"></div>
+
+</section>

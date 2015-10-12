@@ -1,0 +1,9 @@
+{
+	"users": [
+		{"username": "1", "password": "356a192b7913b04c54574d18c28d46e6395428ab"}
+	],
+	"logFiles": [
+		{"name": "Productions Rails Log", "path": "mylogfile", "fullpath":"mylogfile.log", "default": "true"},
+		{"name": "Server's Log", "path": "mylogfile2", "fullpath":"mylogfile2.log"}
+	]
+}
